@@ -1,0 +1,101 @@
+/* your styles go in this file */
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100% !important;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+}
+
+.navbar {
+    background-color: #6A7B8B;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    padding: 10px 50px 5px 50px;
+    height: 89px;
+}
+
+img.white-logo {                        /* every "img" with class "white-logo" will have 75px of height */
+    height: 75px;
+}
+
+.nav-informations a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-informations a:nth-child(n + 2) {
+    margin-left: 50px;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    flex-grow: 1;
+    padding: 10px 100px 100px 40px;
+}
+
+img.grey-logo {
+    height: 280px;
+}
+
+.image-center-page {
+    height: 1330px;
+    width: 100%;
+    background: url('assets/mr_coffee_room.jpg');
+    background-repeat: no-repeat;
+    background-size: 2060px;
+}
+
+.text {
+    position: absolute;
+    background-color: none;
+    color: white;
+    text-align: center;
+    width: 250px;
+    top: 100px;
+    width: 250px;
+    line-height: 30px;
+    height: 30px;
+}
+
+img.coffee-room {
+    height: 1060px;
+    background:url('http://assets/mr_coffee_room.jpg');
+}
+
+h1.image-center-page {
+    position: absolute;
+    background-color: none;
+    color: white;
+    text-align: center;
+    width: 250px;
+    top: 100px;
+    width: 250px;
+    line-height: 30px;
+    height: 30px;
+}
+
+
+
+
+.footer {
+    background-color: #6A7B8B;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    padding: 10px 50px 5px 50px;
+    height: 89px;
+}
