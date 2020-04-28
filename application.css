@@ -1,4 +1,9 @@
 /* your styles go in this file */
+@font-face {
+    font-family: 'Metropolis-ExtraBold';
+    src: url('assets/fonts/metropolis-extrabold.otf');        /* Refer to font */
+ }
+
 html {
     height: 100%;
 }
@@ -7,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100% !important;
-    background-color: white;
+    background-color: #FFFFFF;
     display: flex;
     flex-flow: column;
 }
@@ -27,9 +32,9 @@ img.white-logo {                        /* every "img" with class "white-logo" w
 }
 
 .nav-informations a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Metropolis-ExtraBold';
     font-weight: bold;
     font-size: 18px;
 }
@@ -43,7 +48,7 @@ img.white-logo {                        /* every "img" with class "white-logo" w
     flex-flow: column;
     align-items: center;
     flex-grow: 1;
-    padding: 10px 100px 100px 40px;
+    padding: 10px 100px 100px 100px;
 }
 
 img.grey-logo {
@@ -51,44 +56,37 @@ img.grey-logo {
 }
 
 .image-center-page {
-    height: 1330px;
+    justify-content: center;
     width: 100%;
+    min-height: 1010px;
+    height: 100%;
     background: url('assets/mr_coffee_room.jpg');
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 2060px;
-}
-
-.text {
-    position: absolute;
-    background-color: none;
-    color: white;
-    text-align: center;
-    width: 250px;
-    top: 100px;
-    width: 250px;
-    line-height: 30px;
-    height: 30px;
+    background-size: contain;
+    padding-top: 60px;
 }
 
 img.coffee-room {
     height: 1060px;
-    background:url('http://assets/mr_coffee_room.jpg');
+    background: url('assets/mr_coffee_room.jpg');
 }
 
-h1.image-center-page {
-    position: absolute;
-    background-color: none;
-    color: white;
+div.image-center-page > p {
+    color: #FFFFFF;
+    font-family: 'Metropolis-ExtraBold';
     text-align: center;
-    width: 250px;
-    top: 100px;
-    width: 250px;
-    line-height: 30px;
-    height: 30px;
+    text-shadow: #6B6B6B 0em 0em 0.2em;
+    font-size: 50px;
 }
 
-
-
+div.title-content > p {
+    color: #5C5B5B;
+    font-family: 'Metropolis-ExtraBold';
+    text-align: center;
+    font-size: 50px;
+    line-height: 20px;
+}
 
 .footer {
     background-color: #6A7B8B;
@@ -98,4 +96,56 @@ h1.image-center-page {
     flex-flow: row;
     padding: 10px 50px 5px 50px;
     height: 89px;
+}
+
+.cards {
+    justify-content: space-evenly;
+    display: flex;
+    flex-flow: row;
+}
+
+.cards .cartoon:nth-child(n + 2) {
+    margin-left: 50px;
+}
+
+.cartoon {
+    justify-content: center;
+    background-color: #BAC1C8;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 40px;
+    width: 33%;
+}
+
+div.cartoon > img {
+    height: 150px;
+}
+
+p.cartoon-title {
+    font-family: 'Metropolis-ExtraBold';
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: #6B6B6B 0em 0em 0.2em;
+    font-size: 30px;
+}
+
+.cartoon p {
+    font-family: 'Metropolis-ExtraBold';
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+button {
+    background-color: #6A7B8B;
+    font-family: 'Metropolis-ExtraBold';
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 30px;
+    padding: 32px 100px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px 0 #6B6B6B;
+    border: none;
 }
