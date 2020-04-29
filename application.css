@@ -1,12 +1,7 @@
 /* your styles go in this file */
 @font-face {
     font-family: 'Metropolis-ExtraBold';
-    src: url('assets/fonts/metropolis-extrabold.otf');        /* Refer to font */
- }
-
- @font-face {
-    font-family: Metropolis-Light';
-    src: url('assets/fonts/metropolis-light.otf');
+    src: url('assets/fonts/metropolis-extrabold.otf');
  }
 
 html {
@@ -89,18 +84,23 @@ div.image-center-page > p {
     font-size: 50px;
 }
 
+div.title-content {
+    margin: 50px 0px;
+}
+
 div.title-content > p {
     color: #5C5B5B;
     font-family: 'Metropolis-ExtraBold';
     text-align: center;
     font-size: 50px;
-    line-height: 20px;
+    line-height: 1.3;
 }
 
 .cards {
     justify-content: space-evenly;
     display: flex;
     flex-flow: row;
+    margin-bottom: 130px;
 }
 
 .cards .cartoon:nth-child(n + 2) {
@@ -115,18 +115,12 @@ div.title-content > p {
     align-items: center;
     padding: 40px;
     width: 33%;
+    cursor: pointer;
+    box-shadow: 0 4px 15px 0 #6B6B6B;
 }
 
 div.cartoon > img {
     height: 150px;
-}
-
-p.cartoon-title {
-    font-family: 'Metropolis-ExtraBold';
-    color: #FFFFFF;
-    text-align: center;
-    text-shadow: #6B6B6B 0em 0em 0.2em;
-    font-size: 30px;
 }
 
 .cartoon p {
@@ -137,13 +131,20 @@ p.cartoon-title {
     line-height: 1.5;
 }
 
+p.cartoon-title {
+    font-family: 'Metropolis-ExtraBold';
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: #6B6B6B 0em 0em 0.2em;
+    font-size: 30px;
+}
+
 button {
     background-color: #6A7B8B;
     font-family: 'Metropolis-ExtraBold';
     color: #FFFFFF;
     text-align: center;
     font-size: 30px;
-    margin: 120px 0px 100px 0px;
     padding: 32px 100px;
     border-radius: 15px;
     box-shadow: 0 4px 15px 0 #6B6B6B;
@@ -158,30 +159,96 @@ button:hover {
 }
 
 .content-open {
-    align-items: center;
+    align-items: stretch;
     display: flex;
     flex-flow: column;
-    padding: 100px 0px 300px 0px;
+    font-family: 'Metropolis-Light';
+    font-size: 35px;
+    line-height: 1.1;
+    color: #5C5B5B;
+    text-align: center;
+}
+
+.content-open-header {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-end;
+}
+
+.content-open-header > strong {
+    margin-left: 40px;
+    margin-bottom: 25px;
+}
+
+.content-open-grid {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 80px 0px;
+    font-size: 30px;
+}
+
+.content-open-grid div {
+    width: 40%;
+    text-align: center;
+}
+
+.content-open-grid div:nth-child(n + 3) {
+    margin-top: 70px;
+}
+
+.content-open-second-last {
+    margin-top: 70px;
+}
+
+.content-open-last-child {
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 100px;
 }
 
 img.icon-home {
     height: 140px;
 }
 
-.content-open p {
-    color: #5C5B5B;
-    font-family: 'Metropolis-Light';
-    text-align: center;
-    font-size: 35px;
-    line-height: 20px;
-}
-
 .footer {
+    position: relative;
     background-color: #6A7B8B;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     display: flex;
-    flex-flow: row;
+    flex-flow: column;
     padding: 10px 50px 5px 50px;
-    height: 89px;
+    height: 179px;
+}
+
+.footer p {
+    color: white;
+    font-family: 'Metropolis-Light';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer div:last-child {
+    position: absolute;
+    left: 70px;
+    top: 40px;
+}
+
+.footer-informations {
+    display: flex;
+}
+
+.footer-informations img {
+    width: 40px;
+}
+
+.footer-informations a:nth-child(n + 2) {
+    margin-left: 50px;
+}
+
+img.white-logo-footer {
+    width: 70px;
 }
