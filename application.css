@@ -258,6 +258,28 @@ img.second-room {
     width: 40%;
 }
 
+.contact-general {
+    font-family: 'Metropolis-Medium';
+    color: #5C5B5B;
+    margin: 100px 0px 100px;
+    width: 70%;
+}
+
+.contact-general > p {
+    text-align: center;
+    font-size: 80px;
+}
+
+.contacts {
+    font-size: 45px;
+    line-height: 0.5;
+    padding: 100px;
+}
+
+.address {
+    margin: 0px 0px 100px 0px;
+}
+
 .footer {
     position: relative;
     background-color: #6A7B8B;
