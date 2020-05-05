@@ -280,6 +280,11 @@ img.second-room {
     margin: 0px 0px 100px 0px;
 }
 
+#map {
+    height: 1200px;
+    margin: 0px 600px 200px
+}
+
 .footer {
     position: relative;
     background-color: #6A7B8B;
