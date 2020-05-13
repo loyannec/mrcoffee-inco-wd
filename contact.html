@@ -21,20 +21,41 @@
         <img src="/assets/logo_mrcoffee.png" alt="Grey Logo Coffee" class="grey-logo">
         <div class="contact-general">
             <p class="form-title">Dites nous tout !</p>
-            <form>
-                <label for="fname">Nom *</label><br>
-                <input type="text" id="fname" name="fname"><br>
-                <label for="lname">Prénom *</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="lname">Téléphone *</label><br>
-                <input type="text" id="telephone" name="telephone"><br>
-                <label for="lname">Adresse mail *</label><br>
-                <input type="text" id="email" name="email"><br>
-                <label for="lname">Message *</label><br>
-                <input type="text" id="msg" name="msg"><br>
-                <input type="submit" value="Submit">
+            <!-- <div id="error-message" onsubmit="return validation()"></div> -->
+            <form id="myform">
+                <div class="form-informations">
+                    <label for="fname">Nom *</label>
+                    <input type="text" id="fname" name="firstName" required>
+                </div>
+                <div class="form-informations">
+                    <label for="lname">Prénom *</label>
+                    <input type="text" id="lname" name="lastName" required>
+                </div>
+                <div class="form-informations">
+                    <label for="telephone">Téléphone</label>
+                    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{4}-[0-9]{4}">
+                </div>
+                <div class="form-informations">
+                    <label for="email">Adresse mail *</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-informations">
+                    <label for="msg">Message *</label>
+                    <textarea id="msg" name="msg" maxlength="150" placeholder="Tapez votre message ici" required></textarea>
+                </div>
             </form>
-            <p>On vous attend !</p>
+            <button>ENVOYER</button>
+
+            <!-- <div class="big-modal">
+                <div class="modal-information">
+                    <img src="assets/logo_dark.png" alt="Logo Dark Coffee" class="dark-logo">
+                    <p>MERCI
+                    <p>Votre message a bien été envoyé !</p>
+                    <p>Nous essaierons d’y répondre au mieux dans les plus brefs délais.<br> À bientot chez Mr.Coffee</p>
+                    <button>FERMER</button>
+                </div>
+            </div> -->
+            <!-- <p>On vous attend !</p>
             <div class="contacts">
                 <div class="address">
                     <strong>Mr.Coffee</strong>
@@ -45,10 +66,10 @@
                     <p>Tel : +33 9 46 25 78 45</p>
                     <p>Mail : contact@mr-coffee.com</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
-    <div id="map">
+    <!-- <div id="map">
 
     </div>
     <div class="footer">
@@ -61,6 +82,6 @@
         <div>
             <img src="assets/logo_light.png" alt="Logo Light Coffee" class="white-logo-footer" />
         </div>
-    </div>
+    </div> -->
 </body>
 </html>

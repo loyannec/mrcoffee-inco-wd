@@ -262,7 +262,7 @@ img.second-room {
     font-family: 'Metropolis-Medium';
     color: #5C5B5B;
     margin: 100px 0px 100px;
-    width: 70%;
+    width: 65%;
 }
 
 .contact-general > p {
@@ -285,6 +285,43 @@ img.second-room {
     margin: 0px 600px 200px
 }
 
+.form-informations {
+    font-family: 'Metropolis-Medium';
+    font-size: 45px;
+    color: #5C5B5B;
+    margin: 0px 0px 80px 0px;
+}
+
+input[type=text], [type=tel] {
+    width: 100%;
+    padding: 50px 30px;
+    margin: 30px 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    background-color: #C7CCD1;
+    display: flex;
+    flex-flow: column;
+    cursor: pointer;
+}
+
+textarea {
+    background-color: #C7CCD1;
+    height: 400px;
+    width: 100%;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+::placeholder {
+    color: #FFFFFF;
+    font-family: 'Metropolis-ExtraBold';
+    font-size: 35px;
+    padding: 50px 30px;
+}
+
 .footer {
     position: relative;
     background-color: #6A7B8B;
@@ -297,7 +334,7 @@ img.second-room {
 }
 
 .footer p {
-    color: white;
+    color: #FFFFFF;
     font-family: 'Metropolis-Light';
     font-weight: bold;
     font-size: 30px;
